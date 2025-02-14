@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Encryption App</h1>
+        </header>
+
+        <main>
+            <div class="file_actions">
+                <input type="file" id="file_input" style="display: none;">
+                <button id="upload_file" onclick="upload_file" class="btn">Load File</button>
+                <button id="download_file" class="btn">Download File</button>
+            </div>
+
+            <div class="encryption_actions">
+                <button id="encrypt_btn" class="btn btn-green">Encrypt</button>
+                <button id="decrypt_btn" class="btn btn-green">Decrypt</button>
+            </div>
+
+            <div class="file_preview">
+                <textarea id="file_content" placeholder="File content will appear here..."></textarea>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
